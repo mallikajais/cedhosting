@@ -14,7 +14,8 @@
     
 </head>
 <body>
-    <?php include 'head.php';?>
+    <?php include 'head.php';
+    error_reporting(0);?>
     <div class="main-content" id="panel">
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
       <div class="container-fluid">

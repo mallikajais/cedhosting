@@ -124,7 +124,7 @@ class tbl_product extends Dbcon{
             $sql="SELECT * FROM `tbl_product` WHERE `id`='$prod_parent_id'";
             $roww=$this->conn->query($sql);
             $data1=$roww->fetch_assoc();
-            echo '<script>alert($data1["prod_name"])</script>';
+            // echo '<script>alert($data1["prod_name"])</script>';
             $arr['data'][]=array($data1['prod_name'],$row['prod_name'],$row['html'],$available,$row['prod_launch_date'],$row['mon_price'],$row['annual_price'],$row['sku'],$webspace,$bandwidth,$freedomain,$languagetechnology,$mailbox,"<a href='javascript:void(0)' class='btn btn-outline-info' data-id='".$row['prod_id']."' id='edit-product-by-category' data-toggle='modal' data-target='#exampleModalSignUp'>Edit</a> <a href='javascript:void(0)' class='btn btn-outline-danger' data-id='".$row['prod_id']."' id='delete-product-by-category'>Delete</a>");
         }
         return json_encode($arr);

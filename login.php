@@ -1,6 +1,6 @@
 <?php
 // include_once 'Dbcon.php';
-session_start();
+// session_start();
 
 $conn = new mysqli('localhost', 'root', '','cedhosting');
 // include 'tbl_user.php';
@@ -16,7 +16,7 @@ if(isset($_POST['submit'])){
 	  if ($result->num_rows > 0) {
 	  
 		  while($row = $result->fetch_assoc()) {
-			  echo  $row["email"]. " - Name: ". $row["name"]. " " . $row["mobile"] ;
+			//   echo  $row["email"]. " - Name: ". $row["name"]. " " . $row["mobile"] ;
 			  $_SESSION['name']=$row["name"];
 			  $_SESSION['number']=$row["mobile"];
 			  $_SESSION['password']=$row['password'];

@@ -23,7 +23,8 @@
 
 <body>
   <!-- Sidenav -->
-  <?php include 'head.php';?>
+  <?php include 'head.php';
+  error_reporting(0);?>
   <!-- Main content -->
   <div class="main-content" id="panel">
     <!-- Topnav -->

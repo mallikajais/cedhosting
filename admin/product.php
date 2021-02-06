@@ -1,6 +1,7 @@
 <?php
 include_once 'tbl_product.php';
 $product=new tbl_product();
+error_reporting(0);
 if(isset($_POST['submit'])){
   $productcategory=$_POST['productcategory'];
   $productname=$_POST['productname'];

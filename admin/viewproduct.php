@@ -2,6 +2,7 @@
 include_once 'head.php';
 include_once 'tbl_product.php';
 $product=new tbl_product();
+error_reporting(0);
 ?>
 <div class="main-content" id="panel">
     <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
@@ -217,7 +218,7 @@ $product=new tbl_product();
                   <span>Support</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#!" class="dropdown-item">
+                <a href="http://localhost/cedhosting/login.php" class="dropdown-item">
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
                 </a>
