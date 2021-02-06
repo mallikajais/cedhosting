@@ -1,6 +1,6 @@
 <?php
 include 'Dbcon.php';
-class tbl_user(){
+class tbl_user{
     
     public $conn;
     public $email;
